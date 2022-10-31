@@ -1,2 +1,4 @@
 {'nome': 'Melissa König', 'sobrenome': '9o. ano', 'idade': '30213', 'notas': ()}
 {'nome': 'Melissa König', 'sobrenome': '9o. ano', 'idade': '30273', 'notas': ()}
+{'nome': 'Melissa König', 'sobrenome': '9o. ano', 'idade': '30217'}
+{'nome': 'Melissa Konig', 'sobrenome': '9o. ano', 'idade': '39823', 'notas': ()}

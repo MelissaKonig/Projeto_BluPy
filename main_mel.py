@@ -2,7 +2,7 @@
 Criar cadastro para alunos e depois listar os cadastros.
 
 """
-from controller import *
+from controllerMel import *
 
 
 
@@ -23,10 +23,14 @@ def menu():
 
     if escolha == "A":
         dados_aluno = {}
-        dados_aluno["nome"] = input(("Digite seu nome: "))
-        dados_aluno["sobrenome"] = input(("Digite seu sobrenome: "))
-        dados_aluno["idade"] = input(("Digite sua idade: "))
-        salvar_alunos(dados_aluno)
+        dados_aluno["nome"] = input(("Digite o nome completo do aluno: "))
+        dados_aluno["sobrenome"] = input(("Digite o ano em que o aluno se encontra: "))
+        dados_aluno["idade"] = input(("Digite a matrícula do aluno: "))
+        dados_aluno["notas"] = ()
+        salvarAlunos(dados_aluno)
+    print("Aluno cadastrado!")
 
     if escolha == "B":
         print(listarAlunos())
+    
+menu()
