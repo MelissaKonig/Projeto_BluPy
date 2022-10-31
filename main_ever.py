@@ -1,4 +1,4 @@
-from controller import cadastro_curso, listar_curso, cadastro_notas, media
+from controller_ever import listar_curso, cadastro_notas, media, salvar
 import os
 
 if __name__ == "__main__":    
@@ -10,8 +10,13 @@ if __name__ == "__main__":
             
             match opcao:
                 case 1:
-                    os.system('cls') 
-                    cadastro_curso()
+                    print("CADASTRO DE CURSOS")
+                    curso = {}
+                    curso['nome'] = str(input("Digite o nome do curso: "))
+                    curso['carga_horaria'] = int(input("Digite a carga-horária : "))
+                    curso['modalidade'] = str(input("Digite a modalidade (presencial ou EAD) : ")) 
+                    curso['investimento'] = float(input("Digite o valor da mensalidade : "))
+                    return salvar(curso)
                     
                 case 2:
                     os.system('cls') 
