@@ -1,0 +1,2 @@
+{'nome': 'python', 'carga_horaria': 36, 'modalidade': 'ead', 'investimento': 1000.0}
+{'nome': 'python2', 'carga_horaria': 46, 'modalidade': 'ead', 'investimento': 2000.0}
