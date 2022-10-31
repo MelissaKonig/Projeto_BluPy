@@ -7,22 +7,24 @@ notas
 import os
 
 def salvar(curso):
-    #sintax com funcao open para arquivo txt, variavel criada refenciando o arquivo
-    with open('cursos.txt', 'a') as arquivo:
-
-        #variavel que referencia arquivo recebendo funcao write que recebe como atributo para escrita o cliente
+    
+    with open('cursos.txt', 'a') as arquivo:        
         arquivo.write(str(curso)+"\n")
         os.system('cls')
         print(f"Curso cadastrado:\n{curso}")
         
         
-def listar_curso():
-    
+def listar_curso():    
     with open('cursos.txt') as arquivo:  
         print(f"Lista de cursos cadastrados:\n{arquivo.read()}")
 
-def cadastro_notas():
-    pass
+def media(n1, n2, n3):
 
-def media():
-    pass
+    media = (n1 + n2 + n3) / 3
+    if media >= 7:
+        media = f'Aprovado'
+    elif media >= 5:
+        media = f'Em recuperação'
+    else:
+        media = f'Reprovado'
+    return media

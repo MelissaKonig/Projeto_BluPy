@@ -1,4 +1,4 @@
-from controller_ever import listar_curso, cadastro_notas, media, salvar
+from controller_ever import listar_curso, media, salvar
 import os
 
 if __name__ == "__main__":    
@@ -6,7 +6,7 @@ if __name__ == "__main__":
     def menu():
         
         while True:      
-            opcao = int(input("1. Cadastro de Curso\n2. Listar Cursos\n3. Cadastrar notas\n4. Mostrar média por aluno\nPor favor, digite o nr. da opção desejada: "))
+            opcao = int(input("1. Cadastro de Curso\n2. Listar Cursos\n3. Cadastrar notas\nPor favor, digite o nr. da opção desejada: "))
             
             match opcao:
                 case 1:
@@ -24,18 +24,15 @@ if __name__ == "__main__":
                 
                 case 3:
                     os.system('cls') 
-                    cadastro_notas()
-                
-                case 4:
+                    nome = str(input('Digite o nome do aluno para cadastrar as notas: '))
+                    n1 = float(input('Digite a primeira nota: '))
+                    n2 = float(input('Digite a segunda nota: '))
+                    n3 = float(input('Digite a terceira nota: '))
+                    mediaAluno = (n1 + n2 + n3)/3
+                    resultado = media(n1, n2, n3)
                     os.system('cls') 
-                    media()                     
-                    
-                                                                                                                                 
-                case 9:
-                    os.system('cls')
-                    print("\nAtendimento encerrado.\n") 
-                    break                            
-                
+                    print(f'O Calculo da Media do aluno: {nome} \nPrimeira nota: {n1} \nSegunda nota: {n2} \nTerceira nota: {n3}\nO Aluno esta com a média {mediaAluno:.2f}\nResultado: {resultado}')
+                    break                                    
                                 
                 case _:
                     os.system('cls')
