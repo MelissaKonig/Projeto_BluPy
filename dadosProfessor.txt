@@ -1,0 +1,2 @@
+{'nome': 'evert', 'idade': 34, 'salario': 5000.0}
+{'nome': 'denega', 'idade': 34, 'salario': 6000.0}

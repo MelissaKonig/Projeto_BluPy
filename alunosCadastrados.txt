@@ -1,0 +1,2 @@
+{'nome': 'everton denega', 'CPF': '45658', 'matricula': 343}
+{'nome': 'nome do aluno', 'CPF': '123', 'matricula': 4536}
