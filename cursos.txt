@@ -1,2 +1,0 @@
-{'nome': 'Python Web', 'carga_horaria': 36, 'modalidade': 'EAD', 'investimento': 1000.0}
-{'nome': 'python avancado', 'carga_horaria': 56, 'modalidade': 'presencial', 'investimento': 3000.0}
