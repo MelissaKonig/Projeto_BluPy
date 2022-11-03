@@ -1,3 +1,0 @@
-{'nome': 'fg', 'idade': '33'}
-{'nome': 'gf', 'idade': '44'}
-{'nome': 'j', 'idade': '34'}

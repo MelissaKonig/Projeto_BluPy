@@ -1,17 +1,17 @@
 import os
 
-
+# Função de save dos dados de cadastro do aluno.
 def salvar(curso):
     
-    with open('cursos.txt', 'a') as arquivo:        
-        arquivo.write(str(curso)+"\n")
+    with open('cursos.txt', 'a') as arquivo: #função 'open' abre o arquivo txt para ser editado.       
+        arquivo.write(str(curso)+"\n") #função 'write' escreve no arq. txt as informações cadastradas pelo usuário.
         os.system('cls')
         print(f"Curso cadastrado:\n{curso}")
         
         
 def listar_curso():    
-    with open('cursos.txt') as arquivo:  
-        print(f"Lista de cursos cadastrados:\n{arquivo.read()}")
+    with open('cursos.txt') as arquivo:  #função 'open' abre o arquivo txt para ser editado.
+        print(f"Lista de cursos cadastrados:\n{arquivo.read()}") #função 'read' lê o arq. txt com informações cadastradas pelo usuário e exibe.
 
 def media(n1, n2, n3):
 
@@ -24,7 +24,7 @@ def media(n1, n2, n3):
         media = f'Reprovado'
     return media
 
-#Funçaõ de save dos dados de cadastro do aluno.
+# Função de save dos dados de cadastro do aluno.
 def salvarAlunos(dados_aluno): #(dados_aluno) é o dicionário em que consta as informações cadastradas.
     with open('alunosCadastrados.txt','a') as arquivo: #função 'open' abre o arquivo txt para ser editado.
         arquivo.write(str(dados_aluno)+"\n") #função 'write' escreve no arq. txt as informações cadastradas pelo usuário.
