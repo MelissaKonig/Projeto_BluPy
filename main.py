@@ -1,17 +1,20 @@
+
+# importação de funções do arquivo controller.py
 from controller import listar_curso, media, salvar
 from controller import salvarAlunos, listarAlunos
-from controller import salvar_professor, exibir_professor #puxando as minhas funcoes do outro arquivo
+from controller import salvar_professor, exibir_professor
 import os
 
 if __name__ == "__main__":    
     
+    # função menu() recebendo os dados iniciais do usuário.
     def menu():
         
         while True:
-
+            # variável menuPrincipal com as opções
             menuPrincipal = int(input("MENU PRINCIPAL\n1. FAZER CADASTROS\n2. MOSTRAR LISTAGENS\nPor favor, digite o nr. da opção desejada: "))       
                         
-        
+            # condicional if para identificar o input da variável menuPrincipal.
             if menuPrincipal == 1:
                 os.system('cls')
                 menuSecundario = int(input("MENU DE CADASTROS\n1. Cadastro de Alunos\n2. Cadastro de Professores\n3. Cadastro de Cursos\n4. Simular Média\n5. SAIR\nPor favor, digite o nr. da opção desejada: "))
@@ -19,7 +22,7 @@ if __name__ == "__main__":
                     case 1:
                         os.system('cls')
                         print("-"*25, "CADASTRO DE ALUNOS", "-"*25) # imprimindo com o polimorfismo
-                        #Dicionário save cadastro alunos.
+                        #Dicionário salvando o cadastro de alunos.
                         
                         dados_aluno = {}                        
                         dados_aluno['nome'] = str(input("Digite o nome completo do aluno: "))

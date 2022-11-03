@@ -1,8 +1,7 @@
 
 # Criando form e usando botões
 import PySimpleGUI as pg
-from controller import *
-
+from controllerGUI import salvarAlunos, salvarProfessor, salvarCursos
 
 
 # Passo 1: Setar o theme
